@@ -1,0 +1,319 @@
+* {
+  font-family:"PixelOperatorMono", 'VT323', monospace;
+  font-weight: normal;
+}
+
+.desktop-apps {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 15px;
+  margin-bottom: 40px;
+  color: white;
+  margin-left: 30px;
+
+}
+
+.dapp span {
+  display: inline;
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: 6px 2px 3px rgba(239, 155, 60, 0.2);
+  font-family: "PixelOperatorMono";
+  margin-top: -10px;
+}
+
+
+.dapp {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.dapp img {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+}
+
+.desktop-apps img {
+  padding: 20px;
+
+}
+
+.desktop-apps div {
+  margin-bottom: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #E1DEA9;
+  font-family: 'MS Sans Serif', Geneva, sans-serif;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 300px;
+  width: 300px;
+  margin-left: 400px;
+  padding: 0;
+  background-image: url(images/wp5167395.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; 
+}
+#myAlert {
+  position: fixed;
+  top: 40%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  transform: scale(1.4);
+}
+.window {
+
+  width: 30px;
+  background: #c0c0c0;
+  box-shadow: 5px 2px 10px 5px rgba(0, 0, 0, 0.2);
+  transform: rotate(20px);
+  transform: scale(1.5);
+  justify-content: flex-end;
+  flex-direction: column;
+  
+}
+
+.title-bar {
+  color: #ffffff;
+  padding: 5px;
+  position: relative;
+  height: 27px;
+  z-index: 1; 
+  border: 1px solid black;
+  background-image: linear-gradient(rgba(238, 230, 90, 0.5), rgba(86, 98, 19, 0.5)), url(images/papertexture.jpg);
+}
+.title-bar-text {
+  position:absolute;
+  top: 0px;
+  left: 5px;
+  margin: 0px;
+  display: inline-block;
+  padding: 2px 4px;
+  z-index: 2;
+  font-size: 13px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: black;
+  font-weight: bold;
+}
+
+#WindowClose {
+  position: relative;
+  bottom: 5px;
+  left: 0px;
+  background: none;
+  border: black;
+  box-shadow: px 2px 10px 5px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  transform: scale(1);
+  z-index: 3;
+flex-direction: row;
+justify-content: flex-end;
+align-items: flex-end;
+
+  
+}
+/* #WindowClose:hover{ 
+  border:1px solid black;
+  box-shadow: px 2px 10px 5px rgba(0, 0, 0, 0.2);
+  padding: 2px;
+}
+*/
+.window-body {
+  padding: 0px;
+  margin: 0px;
+  background: #E1DEA9;
+  border: 1px solid black;
+  background-image: linear-gradient(rgba(125, 215, 227, 0.5), rgba(198, 155, 62, 0.5)), url(images/papertexture.jpg);
+}
+
+.taskbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: #ECECEC;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  position: fixed;
+}
+
+.start-button {
+  margin-left: 4px;
+  background: #c0c0c0;
+  border: 1px solid #000;
+  height: 40px;
+  width: 90px;
+  color: #000;
+  box-shadow: 5px 2px 10px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+
+}
+
+.start-button img {
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+/*  
+.Start{
+  margin: 30px;
+padding: 30px;
+  display: flex;
+align-items: flex-start;
+justify-content: space-evenly;
+flex-direction: row;
+}
+*/
+.start-button:hover {
+  background-color: #969696;
+  transition: 1s;
+  transform: translateY(-0.25em);
+}
+
+.taskbar-buttons {
+  flex-grow: 2;
+  display: flex;
+}
+
+/* .taskbar-app {
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  margin: 0 20px;
+  background: #c0c0c0;
+  color: #000;
+  border: 1px solid #000;
+  transition: 1s;
+
+} */
+/*  
+.taskbar-app:hover {
+  background-color: #969696;
+  transform: translateY(-0.25em);
+}
+
+.taskbar-app:active {
+  background-color: aquamarine;
+}
+*/
+
+.dapp1:hover,
+.dapp2:hover,
+.dapp3:hover {
+  transform: translateY(-0.25em);
+  cursor: pointer;
+}
+
+
+.dapp1:active,
+.dapp2:active,
+.dapp3:active {
+  background-color: aquamarine;
+}
+
+.taskbar-app img {
+  width: 16px;
+  height: 16px;
+  margin-right: 2px;
+}
+
+.system-tray {
+  margin-right: 4px;
+}
+
+
+
+::first-letter {
+  font-size: 20px;
+}
+
+.window::first-letter {
+  font-size: 15px;
+}
+
+
+span::first-letter {
+  font-size: 20px;
+}
+
+::selection {
+  background-color: #FFD6A5;
+}
+
+@media(orientation:landscape) {
+  .window {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-basis: 0;
+    flex-grow: 4;
+  }
+}
+
+@media(max-width:768px) {
+  .window {
+    width: 90%;
+    display: flex;
+    flex-grow: 3;
+  }
+}
+
+#clock {
+  position: absolute;
+  right: 20px;
+  bottom: 0px;
+  font-size: 30px;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  margin-right: 5px;
+}
+
+@font-face {
+  font-family: 'Pixel Operator Mono';
+  src: url('.experiment/real projects/fonts/PixelOperatorMono.woff2') format('woff2'),
+    url(' .experiment/real projects/fonts/PixelOperatorMono.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@keyframes fadeOut {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+
+.alert {
+  animation-name: fadeOut;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  left: 100%;
+}
